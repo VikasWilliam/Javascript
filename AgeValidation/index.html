@@ -50,7 +50,8 @@
                 document.getElementById("agecurrent").value=age;
                     return false;
                 }
-    if (dtCurrent.getMonth() == dtDOB.getMonth()) {
+                if (dtCurrent.getMonth() == dtDOB.getMonth()) 
+                {
                     //CD: 11/06/2020 and DB: 15/06/2002. Will turned 18 on 15/06/2018.
                     if (dtCurrent.getDate() < dtDOB.getDate()) {  
                         var age=dtCurrent.getFullYear() - dtDOB.getFullYear();
@@ -62,7 +63,12 @@
             }
             lblError.innerHTML = "Congrulations you are above 18";
             var age=dtCurrent.getFullYear() - dtDOB.getFullYear();
-            console.log(age);
+            if(dtCurrent.getMonth()<dtDOB.getMonth())
+            {
+                age=age-1;
+                console.log(age);
+            }
+            
             document.getElementById("agecurrent").value=age;
             return true;
         } else {
