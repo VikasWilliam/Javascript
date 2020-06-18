@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+        <title></title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name" class="form-group"></input></td>
+            </tr>
+            <tr>
+                <td>
+                <button Onclick="fun()" class="btn btn-danger">Submit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Entered Name:</td>
+                <td>
+                <input type="text" id="display" class="form-group"></input>
+                </td>
+            </tr>
+            
+        </table>
+        <script>
+        function fun(){
+          console.log("Touched")
+          var a = document.getElementById("name").value;
+          document.getElementById("display").value=a;
+
+
+        }
+        </script>
+       
+    </body>
+</html>

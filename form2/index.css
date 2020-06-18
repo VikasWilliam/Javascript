@@ -1,0 +1,9 @@
+table{
+    
+    float: left;
+    display: inline-block;
+    margin: 50px 50px 50px 50px;
+    box-sizing: border-box;
+    border:2px solid #eee;
+    box-shadow: 15px royalblue;
+}

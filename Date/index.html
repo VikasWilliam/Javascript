@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <link rel="stylesheet"  href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <title></title>
+    </head>
+    <body>
+      <h1>Welcome Public!!!</h1>
+      <p>Enter Date:</p>
+      <input type="text" id="name"  class="form-group"></br>
+      <button class="btn btn-primary" id="year" onclick="leapYear()">Submit</button></br></br>
+      <input type="text" id="showname"></p>
+      <script>
+        function leapYear(){
+            console.log("hi reached");
+            var a = document.getElementById("name").value;
+            var x= a.split('/');
+          document.getElementById("showname").value=x;
+            console.log(a);
+        }
+      </script>
+    </body>
+</html>

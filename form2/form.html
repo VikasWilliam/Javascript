@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="app.js"></script>
+        <title></title>
+    </head>
+    <body>
+        
+            <div>
+                <table>  
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" id="fname" class="form-group"></td>
+            </tr><br>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text"class="form-group"></td>
+            </tr><br>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email"class="form-group"></td>
+            </tr><br>
+            <tr>
+                <td>DOB:</td>
+                <td><input type="date"class="form-group"></td>
+            </tr><br>
+            <tr>
+                <td><button onclick="display()" class="btn btn-primary">Submit</button></td>
+            </tr>
+        </table>
+        </div>
+        <div id="secdiv" style="display:none">
+            <table>
+                <tr>
+                    <td>First Name: </td>
+                    <td><p id="dfname"></p></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>

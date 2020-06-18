@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h2>Form Demo</h2>
+       <tr>
+           <td>First Name:</td>
+           <td><input type="text" id="Fname"></td>
+       </tr><br><br>
+       <tr>
+           <td>Last Name:</td>
+           <td><input type="text"></td>
+       </tr> <br><br>
+       <tr>
+           <td><button type="button" onclick="fun()">Click me</button></td>
+       </tr><br<<br>
+       <p id="showname"></p>
+       <script>
+        function fun(){
+            var a = document.getElementById("Fname").value;
+            document.getElementById("showname").innerHTML=a;
+ 
+        }
+        </script>
+       </body>
+     
+</html>
