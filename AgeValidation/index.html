@@ -7,11 +7,17 @@
 </head>
 <body>
     <h2>Age Validation Technique</h2></br>
-    <input type="text" id="txtDate" class="form-group" onblur = "ValidateDOB()" />
-<span class="alert alert-danger"  id="lblError"></span>
+    <table align="center">
+        
+        <p><b>Date of Birth( dd/MM/yyyy)</b></p>
+        <input type="text" id="txtDate" class="form-group" onblur = "ValidateDOB()" />
+            <td><span class="alert alert-danger"  id="lblError"></span></td>
+        </tr>
+    </table>
 <br />
 <br />
 <input type="button" class="btn btn-danger" id="btnValidate" value="Validate" onclick="return ValidateDOB()" /> </br></br>
+<p><b>Current Age: </b></p>
 <input type="text" id="agecurrent" class="form-group"/>
 <script type="text/javascript">
     function ValidateDOB() {
@@ -44,9 +50,9 @@
                 document.getElementById("agecurrent").value=age;
                     return false;
                 }
-                if (dtCurrent.getMonth() == dtDOB.getMonth()) {
+    if (dtCurrent.getMonth() == dtDOB.getMonth()) {
                     //CD: 11/06/2020 and DB: 15/06/2002. Will turned 18 on 15/06/2018.
-                    if (dtCurrent.getDate() < dtDOB.getDate()) {
+                    if (dtCurrent.getDate() < dtDOB.getDate()) {  
                         var age=dtCurrent.getFullYear() - dtDOB.getFullYear();
                 console.log(age);
                 document.getElementById("agecurrent").value=age;
@@ -54,7 +60,7 @@
                     }
                 }
             }
-            lblError.innerHTML = "Congrulations";
+            lblError.innerHTML = "Congrulations you are above 18";
             var age=dtCurrent.getFullYear() - dtDOB.getFullYear();
             console.log(age);
             document.getElementById("agecurrent").value=age;
