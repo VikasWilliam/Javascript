@@ -1,1 +1,35 @@
-welcome
+----map function demo-----------------------
+var array=[1,2,3,4,5];
+var x= array.map(fun);
+
+function fun(num)
+{
+  return num*10;
+}
+
+console.log(x);
+---------------------------------------------
+
+---------Filter function Demo----------------
+var array=[1,2,3,4,5];
+var x= array.filter(fun2);
+
+function fun2(num)
+{
+  return num>3;
+}
+
+console.log(x);
+----------------------------------------------
+
+--------------pop method----------------------|
+var city=["Delhi","Tata","Dhanbad","Alvar"];  |
+                                              |
+function popdemo(){                           |
+  city.pop(2);                                |
+  console.log(city);                          |
+}                                             |
+popdemo();                                    |
+popdemo();                                    |
+popdemo();                                    |
+-----------------------------------------------
