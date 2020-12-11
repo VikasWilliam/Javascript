@@ -33,3 +33,31 @@ popdemo();                                    |
 popdemo();                                    |
 popdemo();                                    |
 -----------------------------------------------
+
+---------------Class and methods---------------
+class Gender{
+  constructor(){
+    this.gender="male";
+  }
+  
+  DisplayGender(){
+    console.log(this.gender);
+  }
+}
+
+
+class Person extends Gender{
+  constructor(){
+    super();
+    this.name="John";
+  }
+  DisplayName(){
+    console.log(this.name);
+  }
+  
+}
+
+const person=new Person();
+person.DisplayName();
+person.DisplayGender();
+------------------------------------------------
